@@ -30,8 +30,8 @@ public class ProductManagerTest {
     @Test
     public void shouldAddProduct() {
         Product[] expected = {product1, product2, product3, product4, product5, product6};
-        Product[] actual = repo.getProducts();
-        // Product[]actual = manager.add(Product products);
+        Product[] actual = manager.getProducts();
+        //Product[]actual = manager.add(Product products);
 
 
         Assertions.assertArrayEquals(expected, actual);

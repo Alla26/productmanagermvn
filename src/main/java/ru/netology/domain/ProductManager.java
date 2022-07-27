@@ -6,9 +6,17 @@ public class ProductManager {
 
     private ProductRepository repo;
 
+    public Product[] getProducts() {
+       Product[] all = repo.getProducts();
+        return all;
+    }
+
+
     public ProductManager(ProductRepository repo) {    //конструктор
         this.repo = repo;
     }
+
+
 
     public void add(Product product) {                 //добавляет продукты
         repo.save(product);
